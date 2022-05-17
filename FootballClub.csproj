@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="footbal_clubsDataSet.Designer.cs">
+    <Compile Include="football_clubsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>footbal_clubsDataSet.xsd</DependentUpon>
+      <DependentUpon>football_clubsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -98,18 +98,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="footbal_clubsDataSet.xsc">
-      <DependentUpon>footbal_clubsDataSet.xsd</DependentUpon>
+    <Content Include="data.sql" />
+    <None Include="football_clubsDataSet.xsc">
+      <DependentUpon>football_clubsDataSet.xsd</DependentUpon>
     </None>
-    <None Include="footbal_clubsDataSet.xsd">
+    <None Include="football_clubsDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>footbal_clubsDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>football_clubsDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="footbal_clubsDataSet.xss">
-      <DependentUpon>footbal_clubsDataSet.xsd</DependentUpon>
+    <None Include="football_clubsDataSet.xss">
+      <DependentUpon>football_clubsDataSet.xsd</DependentUpon>
     </None>
-    <Content Include="data.sql" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

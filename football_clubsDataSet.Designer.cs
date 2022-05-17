@@ -20,9 +20,9 @@ namespace FootbalClub {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("footbal_clubsDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("football_clubsDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class footbal_clubsDataSet : global::System.Data.DataSet {
+    public partial class football_clubsDataSet : global::System.Data.DataSet {
         
         private ClubsDataTable tableClubs;
         
@@ -32,15 +32,13 @@ namespace FootbalClub {
         
         private global::System.Data.DataRelation relationfk_clubs_nation_id;
         
-        private global::System.Data.DataRelation relationfk_players_club_id;
-        
         private global::System.Data.DataRelation relationfk_players_nation_id;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public footbal_clubsDataSet() {
+        public football_clubsDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -51,7 +49,7 @@ namespace FootbalClub {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected footbal_clubsDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected football_clubsDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -163,7 +161,7 @@ namespace FootbalClub {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            footbal_clubsDataSet cln = ((footbal_clubsDataSet)(base.Clone()));
+            football_clubsDataSet cln = ((football_clubsDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -249,16 +247,15 @@ namespace FootbalClub {
                 }
             }
             this.relationfk_clubs_nation_id = this.Relations["fk_clubs_nation_id"];
-            this.relationfk_players_club_id = this.Relations["fk_players_club_id"];
             this.relationfk_players_nation_id = this.Relations["fk_players_nation_id"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "footbal_clubsDataSet";
+            this.DataSetName = "football_clubsDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/footbal_clubsDataSet.xsd";
+            this.Namespace = "http://tempuri.org/football_clubsDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableClubs = new ClubsDataTable();
@@ -271,10 +268,6 @@ namespace FootbalClub {
                         this.tableNations.nation_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableClubs.nation_idColumn}, false);
             this.Relations.Add(this.relationfk_clubs_nation_id);
-            this.relationfk_players_club_id = new global::System.Data.DataRelation("fk_players_club_id", new global::System.Data.DataColumn[] {
-                        this.tableClubs.club_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablePlayers.club_idColumn}, false);
-            this.Relations.Add(this.relationfk_players_club_id);
             this.relationfk_players_nation_id = new global::System.Data.DataRelation("fk_players_nation_id", new global::System.Data.DataColumn[] {
                         this.tableNations.nation_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablePlayers.nation_idColumn}, false);
@@ -310,7 +303,7 @@ namespace FootbalClub {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            footbal_clubsDataSet ds = new footbal_clubsDataSet();
+            football_clubsDataSet ds = new football_clubsDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -558,7 +551,6 @@ namespace FootbalClub {
                 this.columnclub_id.AllowDBNull = false;
                 this.columnclub_id.ReadOnly = true;
                 this.columnclub_id.Unique = true;
-                this.columnnation_id.AllowDBNull = false;
                 this.columnclub_name.AllowDBNull = false;
                 this.columnclub_name.MaxLength = 255;
                 this.columnclub_creation_date.AllowDBNull = false;
@@ -631,7 +623,7 @@ namespace FootbalClub {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                footbal_clubsDataSet ds = new footbal_clubsDataSet();
+                football_clubsDataSet ds = new football_clubsDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -909,7 +901,7 @@ namespace FootbalClub {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                footbal_clubsDataSet ds = new footbal_clubsDataSet();
+                football_clubsDataSet ds = new football_clubsDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1115,19 +1107,16 @@ namespace FootbalClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PlayersRow AddPlayersRow(string player_name, string player_surname, int player_birthyear, ClubsRow parentClubsRowByfk_players_club_id, NationsRow parentNationsRowByfk_players_nation_id, byte[] player_image) {
+            public PlayersRow AddPlayersRow(string player_name, string player_surname, int player_birthyear, int club_id, NationsRow parentNationsRowByfk_players_nation_id, byte[] player_image) {
                 PlayersRow rowPlayersRow = ((PlayersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         player_name,
                         player_surname,
                         player_birthyear,
-                        null,
+                        club_id,
                         null,
                         player_image};
-                if ((parentClubsRowByfk_players_club_id != null)) {
-                    columnValuesArray[4] = parentClubsRowByfk_players_club_id[0];
-                }
                 if ((parentNationsRowByfk_players_nation_id != null)) {
                     columnValuesArray[5] = parentNationsRowByfk_players_nation_id[0];
                 }
@@ -1199,7 +1188,6 @@ namespace FootbalClub {
                 this.columnplayer_surname.AllowDBNull = false;
                 this.columnplayer_surname.MaxLength = 255;
                 this.columnplayer_birthyear.AllowDBNull = false;
-                this.columnnation_id.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1267,7 +1255,7 @@ namespace FootbalClub {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                footbal_clubsDataSet ds = new footbal_clubsDataSet();
+                football_clubsDataSet ds = new football_clubsDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1355,7 +1343,12 @@ namespace FootbalClub {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int nation_id {
                 get {
-                    return ((int)(this[this.tableClubs.nation_idColumn]));
+                    try {
+                        return ((int)(this[this.tableClubs.nation_idColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'nation_id\' w tabeli \'Clubs\' to DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableClubs.nation_idColumn] = value;
@@ -1408,13 +1401,14 @@ namespace FootbalClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PlayersRow[] GetPlayersRows() {
-                if ((this.Table.ChildRelations["fk_players_club_id"] == null)) {
-                    return new PlayersRow[0];
-                }
-                else {
-                    return ((PlayersRow[])(base.GetChildRows(this.Table.ChildRelations["fk_players_club_id"])));
-                }
+            public bool Isnation_idNull() {
+                return this.IsNull(this.tableClubs.nation_idColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setnation_idNull() {
+                this[this.tableClubs.nation_idColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1555,7 +1549,12 @@ namespace FootbalClub {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int nation_id {
                 get {
-                    return ((int)(this[this.tablePlayers.nation_idColumn]));
+                    try {
+                        return ((int)(this[this.tablePlayers.nation_idColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Wartość z kolumny \'nation_id\' w tabeli \'Players\' to DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablePlayers.nation_idColumn] = value;
@@ -1580,17 +1579,6 @@ namespace FootbalClub {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ClubsRow ClubsRow {
-                get {
-                    return ((ClubsRow)(this.GetParentRow(this.Table.ParentRelations["fk_players_club_id"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fk_players_club_id"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public NationsRow NationsRow {
                 get {
                     return ((NationsRow)(this.GetParentRow(this.Table.ParentRelations["fk_players_nation_id"])));
@@ -1610,6 +1598,18 @@ namespace FootbalClub {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setclub_idNull() {
                 this[this.tablePlayers.club_idColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isnation_idNull() {
+                return this.IsNull(this.tablePlayers.nation_idColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setnation_idNull() {
+                this[this.tablePlayers.nation_idColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1728,7 +1728,7 @@ namespace FootbalClub {
         }
     }
 }
-namespace FootbalClub.footbal_clubsDataSetTableAdapters {
+namespace FootbalClub.football_clubsDataSetTableAdapters {
     
     
     /// <summary>
@@ -1860,12 +1860,10 @@ namespace FootbalClub.footbal_clubsDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Clubs] WHERE (([club_id] = @Original_club_id) AND ([nation_id]" +
-                " = @Original_nation_id) AND ([club_name] = @Original_club_name) AND ([club_creat" +
-                "ion_date] = @Original_club_creation_date) AND ([club_ceo_name] = @Original_club_" +
-                "ceo_name))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Clubs] WHERE (([club_id] = @Original_club_id) AND ((@IsNull_nation_id = 1 AND [nation_id] IS NULL) OR ([nation_id] = @Original_nation_id)) AND ([club_name] = @Original_club_name) AND ([club_creation_date] = @Original_club_creation_date) AND ([club_ceo_name] = @Original_club_ceo_name))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_creation_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_creation_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1881,7 +1879,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@club_ceo_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_ceo_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Clubs] SET [nation_id] = @nation_id, [club_name] = @club_name, [club_creation_date] = @club_creation_date, [club_ceo_name] = @club_ceo_name WHERE (([club_id] = @Original_club_id) AND ([nation_id] = @Original_nation_id) AND ([club_name] = @Original_club_name) AND ([club_creation_date] = @Original_club_creation_date) AND ([club_ceo_name] = @Original_club_ceo_name));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Clubs] SET [nation_id] = @nation_id, [club_name] = @club_name, [club_creation_date] = @club_creation_date, [club_ceo_name] = @club_ceo_name WHERE (([club_id] = @Original_club_id) AND ((@IsNull_nation_id = 1 AND [nation_id] IS NULL) OR ([nation_id] = @Original_nation_id)) AND ([club_name] = @Original_club_name) AND ([club_creation_date] = @Original_club_creation_date) AND ([club_ceo_name] = @Original_club_ceo_name));
 SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clubs WHERE (club_id = @club_id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1889,6 +1887,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@club_creation_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_creation_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@club_ceo_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_ceo_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_creation_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_creation_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1900,7 +1899,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.footbal_clubsConnectionString;
+            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.football_clubsConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1918,7 +1917,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(footbal_clubsDataSet.ClubsDataTable dataTable) {
+        public virtual int Fill(football_clubsDataSet.ClubsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1931,9 +1930,9 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual footbal_clubsDataSet.ClubsDataTable GetData() {
+        public virtual football_clubsDataSet.ClubsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            footbal_clubsDataSet.ClubsDataTable dataTable = new footbal_clubsDataSet.ClubsDataTable();
+            football_clubsDataSet.ClubsDataTable dataTable = new football_clubsDataSet.ClubsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1941,14 +1940,14 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(footbal_clubsDataSet.ClubsDataTable dataTable) {
+        public virtual int Update(football_clubsDataSet.ClubsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(footbal_clubsDataSet dataSet) {
+        public virtual int Update(football_clubsDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Clubs");
         }
         
@@ -1971,21 +1970,28 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_club_id, int Original_nation_id, string Original_club_name, int Original_club_creation_date, string Original_club_ceo_name) {
+        public virtual int Delete(int Original_club_id, global::System.Nullable<int> Original_nation_id, string Original_club_name, int Original_club_creation_date, string Original_club_ceo_name) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_club_id));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_nation_id));
+            if ((Original_nation_id.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_nation_id.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
             if ((Original_club_name == null)) {
                 throw new global::System.ArgumentNullException("Original_club_name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_club_name));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_club_name));
             }
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_club_creation_date));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_club_creation_date));
             if ((Original_club_ceo_name == null)) {
                 throw new global::System.ArgumentNullException("Original_club_ceo_name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_club_ceo_name));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_club_ceo_name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2007,8 +2013,13 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int nation_id, string club_name, int club_creation_date, string club_ceo_name) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(nation_id));
+        public virtual int Insert(global::System.Nullable<int> nation_id, string club_name, int club_creation_date, string club_ceo_name) {
+            if ((nation_id.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(nation_id.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             if ((club_name == null)) {
                 throw new global::System.ArgumentNullException("club_name");
             }
@@ -2042,8 +2053,13 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int nation_id, string club_name, int club_creation_date, string club_ceo_name, int Original_club_id, int Original_nation_id, string Original_club_name, int Original_club_creation_date, string Original_club_ceo_name, int club_id) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(nation_id));
+        public virtual int Update(global::System.Nullable<int> nation_id, string club_name, int club_creation_date, string club_ceo_name, int Original_club_id, global::System.Nullable<int> Original_nation_id, string Original_club_name, int Original_club_creation_date, string Original_club_ceo_name, int club_id) {
+            if ((nation_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(nation_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             if ((club_name == null)) {
                 throw new global::System.ArgumentNullException("club_name");
             }
@@ -2058,21 +2074,28 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(club_ceo_name));
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_club_id));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_nation_id));
+            if ((Original_nation_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_nation_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
             if ((Original_club_name == null)) {
                 throw new global::System.ArgumentNullException("Original_club_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_club_name));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_club_name));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_club_creation_date));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_club_creation_date));
             if ((Original_club_ceo_name == null)) {
                 throw new global::System.ArgumentNullException("Original_club_ceo_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_club_ceo_name));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_club_ceo_name));
             }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(club_id));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(club_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2093,7 +2116,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int nation_id, string club_name, int club_creation_date, string club_ceo_name, int Original_club_id, int Original_nation_id, string Original_club_name, int Original_club_creation_date, string Original_club_ceo_name) {
+        public virtual int Update(global::System.Nullable<int> nation_id, string club_name, int club_creation_date, string club_ceo_name, int Original_club_id, global::System.Nullable<int> Original_nation_id, string Original_club_name, int Original_club_creation_date, string Original_club_ceo_name) {
             return this.Update(nation_id, club_name, club_creation_date, club_ceo_name, Original_club_id, Original_nation_id, Original_club_name, Original_club_creation_date, Original_club_ceo_name, Original_club_id);
         }
     }
@@ -2251,7 +2274,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.footbal_clubsConnectionString;
+            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.football_clubsConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2268,7 +2291,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(footbal_clubsDataSet.NationsDataTable dataTable) {
+        public virtual int Fill(football_clubsDataSet.NationsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2281,9 +2304,9 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual footbal_clubsDataSet.NationsDataTable GetData() {
+        public virtual football_clubsDataSet.NationsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            footbal_clubsDataSet.NationsDataTable dataTable = new footbal_clubsDataSet.NationsDataTable();
+            football_clubsDataSet.NationsDataTable dataTable = new football_clubsDataSet.NationsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2291,14 +2314,14 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(footbal_clubsDataSet.NationsDataTable dataTable) {
+        public virtual int Update(football_clubsDataSet.NationsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(footbal_clubsDataSet dataSet) {
+        public virtual int Update(football_clubsDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Nations");
         }
         
@@ -2547,7 +2570,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Players] WHERE (([player_id] = @Original_player_id) AND ([player_name] = @Original_player_name) AND ([player_surname] = @Original_player_surname) AND ([player_birthyear] = @Original_player_birthyear) AND ((@IsNull_club_id = 1 AND [club_id] IS NULL) OR ([club_id] = @Original_club_id)) AND ([nation_id] = @Original_nation_id))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Players] WHERE (([player_id] = @Original_player_id) AND ([player_name] = @Original_player_name) AND ([player_surname] = @Original_player_surname) AND ([player_birthyear] = @Original_player_birthyear) AND ((@IsNull_club_id = 1 AND [club_id] IS NULL) OR ([club_id] = @Original_club_id)) AND ((@IsNull_nation_id = 1 AND [nation_id] IS NULL) OR ([nation_id] = @Original_nation_id)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_player_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_player_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -2555,6 +2578,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_player_birthyear", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_birthyear", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_club_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
@@ -2569,7 +2593,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@player_image", global::System.Data.SqlDbType.VarBinary, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_image", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Players] SET [player_name] = @player_name, [player_surname] = @player_surname, [player_birthyear] = @player_birthyear, [club_id] = @club_id, [nation_id] = @nation_id, [player_image] = @player_image WHERE (([player_id] = @Original_player_id) AND ([player_name] = @Original_player_name) AND ([player_surname] = @Original_player_surname) AND ([player_birthyear] = @Original_player_birthyear) AND ((@IsNull_club_id = 1 AND [club_id] IS NULL) OR ([club_id] = @Original_club_id)) AND ([nation_id] = @Original_nation_id));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Players] SET [player_name] = @player_name, [player_surname] = @player_surname, [player_birthyear] = @player_birthyear, [club_id] = @club_id, [nation_id] = @nation_id, [player_image] = @player_image WHERE (([player_id] = @Original_player_id) AND ([player_name] = @Original_player_name) AND ([player_surname] = @Original_player_surname) AND ([player_birthyear] = @Original_player_birthyear) AND ((@IsNull_club_id = 1 AND [club_id] IS NULL) OR ([club_id] = @Original_club_id)) AND ((@IsNull_nation_id = 1 AND [nation_id] IS NULL) OR ([nation_id] = @Original_nation_id)));
 SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation_id, player_image FROM Players WHERE (player_id = @player_id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@player_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2584,6 +2608,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_player_birthyear", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_birthyear", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_club_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_club_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "club_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nation_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nation_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@player_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "player_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -2592,7 +2617,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.footbal_clubsConnectionString;
+            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.football_clubsConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2610,7 +2635,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(footbal_clubsDataSet.PlayersDataTable dataTable) {
+        public virtual int Fill(football_clubsDataSet.PlayersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2623,9 +2648,9 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual footbal_clubsDataSet.PlayersDataTable GetData() {
+        public virtual football_clubsDataSet.PlayersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            footbal_clubsDataSet.PlayersDataTable dataTable = new footbal_clubsDataSet.PlayersDataTable();
+            football_clubsDataSet.PlayersDataTable dataTable = new football_clubsDataSet.PlayersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2633,14 +2658,14 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(footbal_clubsDataSet.PlayersDataTable dataTable) {
+        public virtual int Update(football_clubsDataSet.PlayersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(footbal_clubsDataSet dataSet) {
+        public virtual int Update(football_clubsDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Players");
         }
         
@@ -2663,7 +2688,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_player_id, string Original_player_name, string Original_player_surname, int Original_player_birthyear, global::System.Nullable<int> Original_club_id, int Original_nation_id) {
+        public virtual int Delete(int Original_player_id, string Original_player_name, string Original_player_surname, int Original_player_birthyear, global::System.Nullable<int> Original_club_id, global::System.Nullable<int> Original_nation_id) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_player_id));
             if ((Original_player_name == null)) {
                 throw new global::System.ArgumentNullException("Original_player_name");
@@ -2686,7 +2711,14 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_nation_id));
+            if ((Original_nation_id.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_nation_id.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2707,7 +2739,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string player_name, string player_surname, int player_birthyear, global::System.Nullable<int> club_id, int nation_id, byte[] player_image) {
+        public virtual int Insert(string player_name, string player_surname, int player_birthyear, global::System.Nullable<int> club_id, global::System.Nullable<int> nation_id, byte[] player_image) {
             if ((player_name == null)) {
                 throw new global::System.ArgumentNullException("player_name");
             }
@@ -2727,7 +2759,12 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(nation_id));
+            if ((nation_id.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(nation_id.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
             if ((player_image == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
@@ -2754,7 +2791,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string player_name, string player_surname, int player_birthyear, global::System.Nullable<int> club_id, int nation_id, byte[] player_image, int Original_player_id, string Original_player_name, string Original_player_surname, int Original_player_birthyear, global::System.Nullable<int> Original_club_id, int Original_nation_id, int player_id) {
+        public virtual int Update(string player_name, string player_surname, int player_birthyear, global::System.Nullable<int> club_id, global::System.Nullable<int> nation_id, byte[] player_image, int Original_player_id, string Original_player_name, string Original_player_surname, int Original_player_birthyear, global::System.Nullable<int> Original_club_id, global::System.Nullable<int> Original_nation_id, int player_id) {
             if ((player_name == null)) {
                 throw new global::System.ArgumentNullException("player_name");
             }
@@ -2774,7 +2811,12 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(nation_id));
+            if ((nation_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(nation_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
             if ((player_image == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
@@ -2803,8 +2845,15 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_nation_id));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(player_id));
+            if ((Original_nation_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_nation_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(player_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2825,7 +2874,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string player_name, string player_surname, int player_birthyear, global::System.Nullable<int> club_id, int nation_id, byte[] player_image, int Original_player_id, string Original_player_name, string Original_player_surname, int Original_player_birthyear, global::System.Nullable<int> Original_club_id, int Original_nation_id) {
+        public virtual int Update(string player_name, string player_surname, int player_birthyear, global::System.Nullable<int> club_id, global::System.Nullable<int> nation_id, byte[] player_image, int Original_player_id, string Original_player_name, string Original_player_surname, int Original_player_birthyear, global::System.Nullable<int> Original_club_id, global::System.Nullable<int> Original_nation_id) {
             return this.Update(player_name, player_surname, player_birthyear, club_id, nation_id, player_image, Original_player_id, Original_player_name, Original_player_surname, Original_player_birthyear, Original_club_id, Original_nation_id, Original_player_id);
         }
     }
@@ -2967,7 +3016,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(footbal_clubsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(football_clubsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._nationsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Nations.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -3004,7 +3053,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(footbal_clubsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(football_clubsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._nationsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Nations.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -3038,7 +3087,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(footbal_clubsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(football_clubsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._playersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Players.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -3096,7 +3145,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(footbal_clubsDataSet dataSet) {
+        public virtual int UpdateAll(football_clubsDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

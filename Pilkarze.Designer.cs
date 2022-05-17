@@ -1,4 +1,4 @@
-﻿namespace FootbalClub
+﻿namespace FootballClub
 {
     partial class Pilkarze
     {
@@ -29,72 +29,246 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.footbal_clubsDataSet = new FootbalClub.footbal_clubsDataSet();
-            this.playersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.playersTableAdapter = new FootbalClub.footbal_clubsDataSetTableAdapters.PlayersTableAdapter();
-            this.clubsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clubsTableAdapter = new FootbalClub.footbal_clubsDataSetTableAdapters.ClubsTableAdapter();
-            this.nationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nationsTableAdapter = new FootbalClub.footbal_clubsDataSetTableAdapters.NationsTableAdapter();
-            this.playeridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.playernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.playersurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.playerbirthyearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clubidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.nationidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.playerimageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.CountryLabelName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.PlayersDataGridView = new System.Windows.Forms.DataGridView();
+            this.PlayerNameTextBox = new System.Windows.Forms.TextBox();
+            this.PlayerNameLabel = new System.Windows.Forms.Label();
+            this.PlayerSurnameTextBox = new System.Windows.Forms.TextBox();
+            this.PlayerSurnameLabel = new System.Windows.Forms.Label();
+            this.PlayerBirthLabel = new System.Windows.Forms.Label();
+            this.PlayerClubLabel = new System.Windows.Forms.Label();
+            this.PlayerCountryLabel = new System.Windows.Forms.Label();
+            this.PlayerDeleteButton = new System.Windows.Forms.Button();
+            this.PlayerUpdateButton = new System.Windows.Forms.Button();
+            this.PlayerImageLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.footbal_clubsDataSet)).BeginInit();
+            this.PlayerReadImageButton = new System.Windows.Forms.Button();
+            this.PlayerClubComboBox = new System.Windows.Forms.ComboBox();
+            this.PlayerCountryComboBox = new System.Windows.Forms.ComboBox();
+            this.PlayerBirthNumericDropdown = new System.Windows.Forms.NumericUpDown();
+            this.PlayerDataGridView = new System.Windows.Forms.DataGridView();
+            this.football_clubsDataSet = new FootbalClub.football_clubsDataSet();
+            this.playersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.playersTableAdapter = new FootbalClub.football_clubsDataSetTableAdapters.PlayersTableAdapter();
+            this.clubsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clubsTableAdapter = new FootbalClub.football_clubsDataSetTableAdapters.ClubsTableAdapter();
+            this.nationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nationsTableAdapter = new FootbalClub.football_clubsDataSetTableAdapters.NationsTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayerBirthNumericDropdown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayerDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.football_clubsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clubsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nationsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // PlayersDataGridView
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.playeridDataGridViewTextBoxColumn,
-            this.playernameDataGridViewTextBoxColumn,
-            this.playersurnameDataGridViewTextBoxColumn,
-            this.playerbirthyearDataGridViewTextBoxColumn,
-            this.clubidDataGridViewTextBoxColumn,
-            this.nationidDataGridViewTextBoxColumn,
-            this.playerimageDataGridViewImageColumn});
-            this.dataGridView1.DataSource = this.playersBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(646, 426);
-            this.dataGridView1.TabIndex = 0;
+            this.PlayersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PlayersDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.PlayersDataGridView.MultiSelect = false;
+            this.PlayersDataGridView.Name = "PlayersDataGridView";
+            this.PlayersDataGridView.Size = new System.Drawing.Size(645, 425);
+            this.PlayersDataGridView.TabIndex = 0;
             // 
-            // footbal_clubsDataSet
+            // PlayerNameTextBox
             // 
-            this.footbal_clubsDataSet.DataSetName = "footbal_clubsDataSet";
-            this.footbal_clubsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.PlayerNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "player_name", true));
+            this.PlayerNameTextBox.Location = new System.Drawing.Point(860, 18);
+            this.PlayerNameTextBox.Name = "PlayerNameTextBox";
+            this.PlayerNameTextBox.Size = new System.Drawing.Size(112, 20);
+            this.PlayerNameTextBox.TabIndex = 6;
+            // 
+            // PlayerNameLabel
+            // 
+            this.PlayerNameLabel.AutoSize = true;
+            this.PlayerNameLabel.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerNameLabel.Location = new System.Drawing.Point(664, 12);
+            this.PlayerNameLabel.Name = "PlayerNameLabel";
+            this.PlayerNameLabel.Size = new System.Drawing.Size(77, 25);
+            this.PlayerNameLabel.TabIndex = 5;
+            this.PlayerNameLabel.Text = "Imię:";
+            // 
+            // PlayerSurnameTextBox
+            // 
+            this.PlayerSurnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "player_surname", true));
+            this.PlayerSurnameTextBox.Location = new System.Drawing.Point(860, 64);
+            this.PlayerSurnameTextBox.Name = "PlayerSurnameTextBox";
+            this.PlayerSurnameTextBox.Size = new System.Drawing.Size(112, 20);
+            this.PlayerSurnameTextBox.TabIndex = 8;
+            // 
+            // PlayerSurnameLabel
+            // 
+            this.PlayerSurnameLabel.AutoSize = true;
+            this.PlayerSurnameLabel.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerSurnameLabel.Location = new System.Drawing.Point(664, 58);
+            this.PlayerSurnameLabel.Name = "PlayerSurnameLabel";
+            this.PlayerSurnameLabel.Size = new System.Drawing.Size(129, 25);
+            this.PlayerSurnameLabel.TabIndex = 7;
+            this.PlayerSurnameLabel.Text = "Nazwisko:";
+            // 
+            // PlayerBirthLabel
+            // 
+            this.PlayerBirthLabel.AutoSize = true;
+            this.PlayerBirthLabel.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerBirthLabel.Location = new System.Drawing.Point(664, 99);
+            this.PlayerBirthLabel.Name = "PlayerBirthLabel";
+            this.PlayerBirthLabel.Size = new System.Drawing.Size(194, 25);
+            this.PlayerBirthLabel.TabIndex = 9;
+            this.PlayerBirthLabel.Text = "Rok urodzenia:";
+            // 
+            // PlayerClubLabel
+            // 
+            this.PlayerClubLabel.AutoSize = true;
+            this.PlayerClubLabel.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerClubLabel.Location = new System.Drawing.Point(664, 148);
+            this.PlayerClubLabel.Name = "PlayerClubLabel";
+            this.PlayerClubLabel.Size = new System.Drawing.Size(64, 25);
+            this.PlayerClubLabel.TabIndex = 11;
+            this.PlayerClubLabel.Text = "Klub";
+            // 
+            // PlayerCountryLabel
+            // 
+            this.PlayerCountryLabel.AutoSize = true;
+            this.PlayerCountryLabel.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerCountryLabel.Location = new System.Drawing.Point(664, 192);
+            this.PlayerCountryLabel.Name = "PlayerCountryLabel";
+            this.PlayerCountryLabel.Size = new System.Drawing.Size(77, 25);
+            this.PlayerCountryLabel.TabIndex = 13;
+            this.PlayerCountryLabel.Text = "Kraj:";
+            // 
+            // PlayerDeleteButton
+            // 
+            this.PlayerDeleteButton.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerDeleteButton.Location = new System.Drawing.Point(850, 383);
+            this.PlayerDeleteButton.Name = "PlayerDeleteButton";
+            this.PlayerDeleteButton.Size = new System.Drawing.Size(125, 55);
+            this.PlayerDeleteButton.TabIndex = 17;
+            this.PlayerDeleteButton.Text = "Usuń";
+            this.PlayerDeleteButton.UseVisualStyleBackColor = true;
+            this.PlayerDeleteButton.Click += new System.EventHandler(this.PlayerDeleteButton_Click);
+            // 
+            // PlayerUpdateButton
+            // 
+            this.PlayerUpdateButton.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerUpdateButton.Location = new System.Drawing.Point(669, 383);
+            this.PlayerUpdateButton.Name = "PlayerUpdateButton";
+            this.PlayerUpdateButton.Size = new System.Drawing.Size(145, 55);
+            this.PlayerUpdateButton.TabIndex = 16;
+            this.PlayerUpdateButton.Text = "Zaktualizuj";
+            this.PlayerUpdateButton.UseVisualStyleBackColor = true;
+            this.PlayerUpdateButton.Click += new System.EventHandler(this.PlayerUpdateButton_Click);
+            // 
+            // PlayerImageLabel
+            // 
+            this.PlayerImageLabel.AutoSize = true;
+            this.PlayerImageLabel.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerImageLabel.Location = new System.Drawing.Point(664, 242);
+            this.PlayerImageLabel.Name = "PlayerImageLabel";
+            this.PlayerImageLabel.Size = new System.Drawing.Size(116, 25);
+            this.PlayerImageLabel.TabIndex = 18;
+            this.PlayerImageLabel.Text = "Zdjęcie:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.playersBindingSource, "player_image", true));
+            this.pictureBox1.Location = new System.Drawing.Point(860, 242);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 115);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // PlayerReadImageButton
+            // 
+            this.PlayerReadImageButton.Font = new System.Drawing.Font("Monospac821 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PlayerReadImageButton.Location = new System.Drawing.Point(669, 326);
+            this.PlayerReadImageButton.Name = "PlayerReadImageButton";
+            this.PlayerReadImageButton.Size = new System.Drawing.Size(94, 29);
+            this.PlayerReadImageButton.TabIndex = 20;
+            this.PlayerReadImageButton.Text = "Wczytaj";
+            this.PlayerReadImageButton.UseVisualStyleBackColor = true;
+            this.PlayerReadImageButton.Click += new System.EventHandler(this.PlayerReadImageButton_Click);
+            // 
+            // PlayerClubComboBox
+            // 
+            this.PlayerClubComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clubsBindingSource, "club_name", true));
+            this.PlayerClubComboBox.FormattingEnabled = true;
+            this.PlayerClubComboBox.Location = new System.Drawing.Point(860, 152);
+            this.PlayerClubComboBox.Name = "PlayerClubComboBox";
+            this.PlayerClubComboBox.Size = new System.Drawing.Size(112, 21);
+            this.PlayerClubComboBox.TabIndex = 21;
+            this.PlayerClubComboBox.ValueMember = "nation_id";
+            // 
+            // PlayerCountryComboBox
+            // 
+            this.PlayerCountryComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nationsBindingSource, "nation_name", true));
+            this.PlayerCountryComboBox.DisplayMember = "club_name";
+            this.PlayerCountryComboBox.FormattingEnabled = true;
+            this.PlayerCountryComboBox.Location = new System.Drawing.Point(860, 198);
+            this.PlayerCountryComboBox.Name = "PlayerCountryComboBox";
+            this.PlayerCountryComboBox.Size = new System.Drawing.Size(112, 21);
+            this.PlayerCountryComboBox.TabIndex = 22;
+            this.PlayerCountryComboBox.ValueMember = "club_id";
+            // 
+            // PlayerBirthNumericDropdown
+            // 
+            this.PlayerBirthNumericDropdown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.playersBindingSource, "player_birthyear", true));
+            this.PlayerBirthNumericDropdown.Location = new System.Drawing.Point(860, 103);
+            this.PlayerBirthNumericDropdown.Maximum = new decimal(new int[] {
+            2022,
+            0,
+            0,
+            0});
+            this.PlayerBirthNumericDropdown.Minimum = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            this.PlayerBirthNumericDropdown.Name = "PlayerBirthNumericDropdown";
+            this.PlayerBirthNumericDropdown.Size = new System.Drawing.Size(112, 20);
+            this.PlayerBirthNumericDropdown.TabIndex = 23;
+            this.PlayerBirthNumericDropdown.Value = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            // 
+            // PlayersDataGridView
+            // 
+            this.PlayersDataGridView.AutoGenerateColumns = false;
+            this.PlayersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PlayersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewImageColumn1});
+            this.PlayersDataGridView.DataSource = this.playersBindingSource;
+            this.PlayersDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.PlayersDataGridView.Name = "PlayerDataGridView";
+            this.PlayersDataGridView.Size = new System.Drawing.Size(645, 425);
+            this.PlayersDataGridView.TabIndex = 24;
+            // 
+            // football_clubsDataSet
+            // 
+            this.football_clubsDataSet.DataSetName = "football_clubsDataSet";
+            this.football_clubsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // playersBindingSource
             // 
             this.playersBindingSource.DataMember = "Players";
-            this.playersBindingSource.DataSource = this.footbal_clubsDataSet;
+            this.playersBindingSource.DataSource = this.football_clubsDataSet;
             // 
             // playersTableAdapter
             // 
@@ -103,7 +277,7 @@
             // clubsBindingSource
             // 
             this.clubsBindingSource.DataMember = "Clubs";
-            this.clubsBindingSource.DataSource = this.footbal_clubsDataSet;
+            this.clubsBindingSource.DataSource = this.football_clubsDataSet;
             // 
             // clubsTableAdapter
             // 
@@ -112,245 +286,98 @@
             // nationsBindingSource
             // 
             this.nationsBindingSource.DataMember = "Nations";
-            this.nationsBindingSource.DataSource = this.footbal_clubsDataSet;
+            this.nationsBindingSource.DataSource = this.football_clubsDataSet;
             // 
             // nationsTableAdapter
             // 
             this.nationsTableAdapter.ClearBeforeFill = true;
             // 
-            // playeridDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.playeridDataGridViewTextBoxColumn.DataPropertyName = "player_id";
-            this.playeridDataGridViewTextBoxColumn.HeaderText = "player_id";
-            this.playeridDataGridViewTextBoxColumn.Name = "playeridDataGridViewTextBoxColumn";
-            this.playeridDataGridViewTextBoxColumn.ReadOnly = true;
-            this.playeridDataGridViewTextBoxColumn.Visible = false;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "player_id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "player_id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
             // 
-            // playernameDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.playernameDataGridViewTextBoxColumn.DataPropertyName = "player_name";
-            this.playernameDataGridViewTextBoxColumn.HeaderText = "Imię";
-            this.playernameDataGridViewTextBoxColumn.Name = "playernameDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "player_name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Imię";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // playersurnameDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.playersurnameDataGridViewTextBoxColumn.DataPropertyName = "player_surname";
-            this.playersurnameDataGridViewTextBoxColumn.HeaderText = "Nazwisko";
-            this.playersurnameDataGridViewTextBoxColumn.Name = "playersurnameDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "player_surname";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nazwisko";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // playerbirthyearDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.playerbirthyearDataGridViewTextBoxColumn.DataPropertyName = "player_birthyear";
-            this.playerbirthyearDataGridViewTextBoxColumn.HeaderText = "Rok urodzenia";
-            this.playerbirthyearDataGridViewTextBoxColumn.Name = "playerbirthyearDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "player_birthyear";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Data urodzenia";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // clubidDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn5
             // 
-            this.clubidDataGridViewTextBoxColumn.DataPropertyName = "club_id";
-            this.clubidDataGridViewTextBoxColumn.DataSource = this.clubsBindingSource;
-            this.clubidDataGridViewTextBoxColumn.DisplayMember = "club_name";
-            this.clubidDataGridViewTextBoxColumn.HeaderText = "Klub";
-            this.clubidDataGridViewTextBoxColumn.Name = "clubidDataGridViewTextBoxColumn";
-            this.clubidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clubidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clubidDataGridViewTextBoxColumn.ValueMember = "club_id";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "club_id";
+            this.dataGridViewTextBoxColumn5.DataSource = this.clubsBindingSource;
+            this.dataGridViewTextBoxColumn5.DisplayMember = "club_name";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Klub";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn5.ValueMember = "club_id";
             // 
-            // nationidDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn6
             // 
-            this.nationidDataGridViewTextBoxColumn.DataPropertyName = "nation_id";
-            this.nationidDataGridViewTextBoxColumn.DataSource = this.nationsBindingSource;
-            this.nationidDataGridViewTextBoxColumn.DisplayMember = "nation_name";
-            this.nationidDataGridViewTextBoxColumn.HeaderText = "nation_id";
-            this.nationidDataGridViewTextBoxColumn.Name = "nationidDataGridViewTextBoxColumn";
-            this.nationidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.nationidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.nationidDataGridViewTextBoxColumn.ValueMember = "nation_id";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "nation_id";
+            this.dataGridViewTextBoxColumn6.DataSource = this.nationsBindingSource;
+            this.dataGridViewTextBoxColumn6.DisplayMember = "nation_name";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Kraj";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn6.ValueMember = "nation_id";
             // 
-            // playerimageDataGridViewImageColumn
+            // dataGridViewImageColumn1
             // 
-            this.playerimageDataGridViewImageColumn.DataPropertyName = "player_image";
-            this.playerimageDataGridViewImageColumn.HeaderText = "Zdjęcie";
-            this.playerimageDataGridViewImageColumn.Name = "playerimageDataGridViewImageColumn";
-            // 
-            // textBox1
-            // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nationsBindingSource, "nation_name", true));
-            this.textBox1.Location = new System.Drawing.Point(860, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(112, 20);
-            this.textBox1.TabIndex = 6;
-            // 
-            // CountryLabelName
-            // 
-            this.CountryLabelName.AutoSize = true;
-            this.CountryLabelName.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CountryLabelName.Location = new System.Drawing.Point(664, 12);
-            this.CountryLabelName.Name = "CountryLabelName";
-            this.CountryLabelName.Size = new System.Drawing.Size(77, 25);
-            this.CountryLabelName.TabIndex = 5;
-            this.CountryLabelName.Text = "Imię:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nationsBindingSource, "nation_name", true));
-            this.textBox2.Location = new System.Drawing.Point(860, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(664, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Nazwisko:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nationsBindingSource, "nation_name", true));
-            this.textBox3.Location = new System.Drawing.Point(860, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(112, 20);
-            this.textBox3.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(664, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 25);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Rok urodzenia:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nationsBindingSource, "nation_name", true));
-            this.textBox4.Location = new System.Drawing.Point(860, 154);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(112, 20);
-            this.textBox4.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(664, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 25);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Klub";
-            // 
-            // textBox5
-            // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nationsBindingSource, "nation_name", true));
-            this.textBox5.Location = new System.Drawing.Point(860, 198);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(112, 20);
-            this.textBox5.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(664, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Kraj:";
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(900, 383);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 55);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Usuń";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(749, 383);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 55);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Zaktualizuj";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(669, 383);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 55);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Dodaj";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(664, 242);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 25);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Zdjęcie:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(860, 242);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 113);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Monospac821 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(669, 326);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 29);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Wczytaj";
-            this.button4.UseVisualStyleBackColor = true;
+            this.dataGridViewImageColumn1.DataPropertyName = "player_image";
+            this.dataGridViewImageColumn1.HeaderText = "Zdjęcie";
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
             // Pilkarze
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 450);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(984, 451);
+            this.Controls.Add(this.PlayerBirthNumericDropdown);
+            this.Controls.Add(this.PlayerCountryComboBox);
+            this.Controls.Add(this.PlayerClubComboBox);
+            this.Controls.Add(this.PlayerReadImageButton);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.CountryLabelName);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.PlayerImageLabel);
+            this.Controls.Add(this.PlayerDeleteButton);
+            this.Controls.Add(this.PlayerUpdateButton);
+            this.Controls.Add(this.PlayerCountryLabel);
+            this.Controls.Add(this.PlayerClubLabel);
+            this.Controls.Add(this.PlayerBirthLabel);
+            this.Controls.Add(this.PlayerSurnameTextBox);
+            this.Controls.Add(this.PlayerSurnameLabel);
+            this.Controls.Add(this.PlayerNameTextBox);
+            this.Controls.Add(this.PlayerNameLabel);
+            this.Controls.Add(this.PlayersDataGridView);
             this.Name = "Pilkarze";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Pilkarze";
             this.Load += new System.EventHandler(this.Pilkarze_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.footbal_clubsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayerBirthNumericDropdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.football_clubsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clubsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nationsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,14 +385,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private footbal_clubsDataSet footbal_clubsDataSet;
-        private System.Windows.Forms.BindingSource playersBindingSource;
-        private footbal_clubsDataSetTableAdapters.PlayersTableAdapter playersTableAdapter;
-        private System.Windows.Forms.BindingSource clubsBindingSource;
-        private footbal_clubsDataSetTableAdapters.ClubsTableAdapter clubsTableAdapter;
-        private System.Windows.Forms.BindingSource nationsBindingSource;
-        private footbal_clubsDataSetTableAdapters.NationsTableAdapter nationsTableAdapter;
+        private System.Windows.Forms.DataGridView PlayersDataGridView;
+        //private football_clubsDataSetTableAdapters.NationsTableAdapter nationsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn playeridDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn playernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn playersurnameDataGridViewTextBoxColumn;
@@ -373,21 +394,35 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn clubidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn nationidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn playerimageDataGridViewImageColumn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label CountryLabelName;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox PlayerNameTextBox;
+        private System.Windows.Forms.Label PlayerNameLabel;
+        private System.Windows.Forms.TextBox PlayerSurnameTextBox;
+        private System.Windows.Forms.Label PlayerSurnameLabel;
+        private System.Windows.Forms.Label PlayerBirthLabel;
+        private System.Windows.Forms.Label PlayerClubLabel;
+        private System.Windows.Forms.Label PlayerCountryLabel;
+        private System.Windows.Forms.Button PlayerDeleteButton;
+        private System.Windows.Forms.Button PlayerUpdateButton;
+        private System.Windows.Forms.Label PlayerImageLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button PlayerReadImageButton;
+        private System.Windows.Forms.ComboBox PlayerClubComboBox;
+        private System.Windows.Forms.ComboBox PlayerCountryComboBox;
+        private System.Windows.Forms.NumericUpDown PlayerBirthNumericDropdown;
+        private System.Windows.Forms.DataGridView PlayerDataGridView;
+        private FootbalClub.football_clubsDataSet football_clubsDataSet;
+        private System.Windows.Forms.BindingSource playersBindingSource;
+        private FootbalClub.football_clubsDataSetTableAdapters.PlayersTableAdapter playersTableAdapter;
+        private System.Windows.Forms.BindingSource clubsBindingSource;
+        private FootbalClub.football_clubsDataSetTableAdapters.ClubsTableAdapter clubsTableAdapter;
+        private System.Windows.Forms.BindingSource nationsBindingSource;
+        private FootbalClub.football_clubsDataSetTableAdapters.NationsTableAdapter nationsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
     }
 }

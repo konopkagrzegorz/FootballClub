@@ -1,4 +1,4 @@
-CREATE DATABASE footbal_clubs
+CREATE DATABASE football_clubs
 USE footbal_clubs
 
 CREATE TABLE Clubs(

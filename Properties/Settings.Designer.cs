@@ -33,5 +33,16 @@ namespace FootbalClub.Properties {
                 return ((string)(this["footbal_clubsConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=BOBEK\\SQLEXPRESS;Initial Catalog=football_clubs;Integrated Security=T" +
+            "rue")]
+        public string football_clubsConnectionString {
+            get {
+                return ((string)(this["football_clubsConnectionString"]));
+            }
+        }
     }
 }

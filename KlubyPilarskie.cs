@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FootbalClub
+namespace FootballClub
 {
     public partial class KlubyPilarskie : Form
     {
@@ -19,18 +19,29 @@ namespace FootbalClub
 
         private void KlubyPilarskie_Load(object sender, EventArgs e)
         {
-            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'footbal_clubsDataSet.Nations' . Możesz go przenieść lub usunąć.
-            this.nationsTableAdapter.Fill(this.footbal_clubsDataSet.Nations);
-            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'footbal_clubsDataSet.Players' . Możesz go przenieść lub usunąć.
-            this.playersTableAdapter.Fill(this.footbal_clubsDataSet.Players);
-            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'footbal_clubsDataSet.Clubs' . Możesz go przenieść lub usunąć.
-            this.clubsTableAdapter.Fill(this.footbal_clubsDataSet.Clubs);
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'football_clubsDataSet.Nations' . Możesz go przenieść lub usunąć.
+            this.nationsTableAdapter.Fill(this.football_clubsDataSet.Nations);
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli 'football_clubsDataSet.Clubs' . Możesz go przenieść lub usunąć.
+            this.clubsTableAdapter.Fill(this.football_clubsDataSet.Clubs);
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void CountryDeleteButton_Click(object sender, EventArgs e)
         {
+            if (ClubsDataGridView.CurrentRow != null)
+            {
+                ClubsDataGridView.CurrentRow.Selected = true;
+                ClubsDataGridView.Rows.Remove(ClubsDataGridView.SelectedRows[0]);
+                clubsTableAdapter.Update(football_clubsDataSet.Clubs);
+            }
+        }
 
+        private void CountryUpdateButton_Click(object sender, EventArgs e)
+        {
+            if (ClubsDataGridView.CurrentRow != null)
+            {
+                clubsTableAdapter.Update(football_clubsDataSet.Clubs);
+            }
         }
     }
 }
