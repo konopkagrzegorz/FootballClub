@@ -1,5 +1,8 @@
-CREATE DATABASE football_clubs
-USE footbal_clubs
+USE master;
+
+CREATE DATABASE football_clubs;
+
+USE football_clubs;
 
 CREATE TABLE Clubs(
 club_id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
