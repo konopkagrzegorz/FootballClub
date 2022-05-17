@@ -33,7 +33,7 @@
             this.CountryUpdateButton = new System.Windows.Forms.Button();
             this.ClubCountryTextBox = new System.Windows.Forms.TextBox();
             this.nationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.football_clubsDataSet = new FootbalClub.football_clubsDataSet();
+            this.football_clubsDataSet = new FootballClub.football_clubsDataSet();
             this.CountryLabelName = new System.Windows.Forms.Label();
             this.ClubNameTextBox = new System.Windows.Forms.TextBox();
             this.clubsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -48,8 +48,8 @@
             this.clubnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clubcreationdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clubceonameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clubsTableAdapter = new FootbalClub.football_clubsDataSetTableAdapters.ClubsTableAdapter();
-            this.nationsTableAdapter = new FootbalClub.football_clubsDataSetTableAdapters.NationsTableAdapter();
+            this.clubsTableAdapter = new FootballClub.football_clubsDataSetTableAdapters.ClubsTableAdapter();
+            this.nationsTableAdapter = new FootballClub.football_clubsDataSetTableAdapters.NationsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.nationsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.football_clubsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clubsBindingSource)).BeginInit();
@@ -270,11 +270,11 @@
         private System.Windows.Forms.TextBox ClubCeoTextBox;
         private System.Windows.Forms.Label ClubCeoNameLabel;
         private System.Windows.Forms.DataGridView ClubsDataGridView;
-        private FootbalClub.football_clubsDataSet football_clubsDataSet;
+        private FootballClub.football_clubsDataSet football_clubsDataSet;
         private System.Windows.Forms.BindingSource clubsBindingSource;
-        private FootbalClub.football_clubsDataSetTableAdapters.ClubsTableAdapter clubsTableAdapter;
+        private FootballClub.football_clubsDataSetTableAdapters.ClubsTableAdapter clubsTableAdapter;
         private System.Windows.Forms.BindingSource nationsBindingSource;
-        private FootbalClub.football_clubsDataSetTableAdapters.NationsTableAdapter nationsTableAdapter;
+        private FootballClub.football_clubsDataSetTableAdapters.NationsTableAdapter nationsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn clubidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn nationidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clubnameDataGridViewTextBoxColumn;

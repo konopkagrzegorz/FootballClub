@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="football_clubsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="football_clubsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FootbalClub.Properties.Settings.GlobalReference.Default.football_clubsConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="football_clubsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="football_clubsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FootballClub.Properties.Settings.GlobalReference.Default.football_clubsConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClubsTableAdapter" GeneratorDataComponentClassName="ClubsTableAdapter" Name="Clubs" UserDataComponentName="ClubsTableAdapter">
@@ -200,7 +200,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
   <xs:element name="football_clubsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="football_clubsDataSet" msprop:Generator_UserDSName="football_clubsDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Clubs" msprop:Generator_TableClassName="ClubsDataTable" msprop:Generator_TableVarName="tableClubs" msprop:Generator_TablePropName="Clubs" msprop:Generator_RowDeletingName="ClubsRowDeleting" msprop:Generator_RowChangingName="ClubsRowChanging" msprop:Generator_RowEvHandlerName="ClubsRowChangeEventHandler" msprop:Generator_RowDeletedName="ClubsRowDeleted" msprop:Generator_UserTableName="Clubs" msprop:Generator_RowChangedName="ClubsRowChanged" msprop:Generator_RowEvArgName="ClubsRowChangeEvent" msprop:Generator_RowClassName="ClubsRow">
+        <xs:element name="Clubs" msprop:Generator_TableClassName="ClubsDataTable" msprop:Generator_TableVarName="tableClubs" msprop:Generator_RowChangedName="ClubsRowChanged" msprop:Generator_TablePropName="Clubs" msprop:Generator_RowDeletingName="ClubsRowDeleting" msprop:Generator_RowChangingName="ClubsRowChanging" msprop:Generator_RowEvHandlerName="ClubsRowChangeEventHandler" msprop:Generator_RowDeletedName="ClubsRowDeleted" msprop:Generator_RowClassName="ClubsRow" msprop:Generator_UserTableName="Clubs" msprop:Generator_RowEvArgName="ClubsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="club_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnclub_id" msprop:Generator_ColumnPropNameInRow="club_id" msprop:Generator_ColumnPropNameInTable="club_idColumn" msprop:Generator_UserColumnName="club_id" type="xs:int" />
@@ -223,7 +223,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Nations" msprop:Generator_TableClassName="NationsDataTable" msprop:Generator_TableVarName="tableNations" msprop:Generator_TablePropName="Nations" msprop:Generator_RowDeletingName="NationsRowDeleting" msprop:Generator_RowChangingName="NationsRowChanging" msprop:Generator_RowEvHandlerName="NationsRowChangeEventHandler" msprop:Generator_RowDeletedName="NationsRowDeleted" msprop:Generator_UserTableName="Nations" msprop:Generator_RowChangedName="NationsRowChanged" msprop:Generator_RowEvArgName="NationsRowChangeEvent" msprop:Generator_RowClassName="NationsRow">
+        <xs:element name="Nations" msprop:Generator_TableClassName="NationsDataTable" msprop:Generator_TableVarName="tableNations" msprop:Generator_RowChangedName="NationsRowChanged" msprop:Generator_TablePropName="Nations" msprop:Generator_RowDeletingName="NationsRowDeleting" msprop:Generator_RowChangingName="NationsRowChanging" msprop:Generator_RowEvHandlerName="NationsRowChangeEventHandler" msprop:Generator_RowDeletedName="NationsRowDeleted" msprop:Generator_RowClassName="NationsRow" msprop:Generator_UserTableName="Nations" msprop:Generator_RowEvArgName="NationsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="nation_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnnation_id" msprop:Generator_ColumnPropNameInRow="nation_id" msprop:Generator_ColumnPropNameInTable="nation_idColumn" msprop:Generator_UserColumnName="nation_id" type="xs:int" />
@@ -237,7 +237,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Players" msprop:Generator_TableClassName="PlayersDataTable" msprop:Generator_TableVarName="tablePlayers" msprop:Generator_TablePropName="Players" msprop:Generator_RowDeletingName="PlayersRowDeleting" msprop:Generator_RowChangingName="PlayersRowChanging" msprop:Generator_RowEvHandlerName="PlayersRowChangeEventHandler" msprop:Generator_RowDeletedName="PlayersRowDeleted" msprop:Generator_UserTableName="Players" msprop:Generator_RowChangedName="PlayersRowChanged" msprop:Generator_RowEvArgName="PlayersRowChangeEvent" msprop:Generator_RowClassName="PlayersRow">
+        <xs:element name="Players" msprop:Generator_TableClassName="PlayersDataTable" msprop:Generator_TableVarName="tablePlayers" msprop:Generator_RowChangedName="PlayersRowChanged" msprop:Generator_TablePropName="Players" msprop:Generator_RowDeletingName="PlayersRowDeleting" msprop:Generator_RowChangingName="PlayersRowChanging" msprop:Generator_RowEvHandlerName="PlayersRowChangeEventHandler" msprop:Generator_RowDeletedName="PlayersRowDeleted" msprop:Generator_RowClassName="PlayersRow" msprop:Generator_UserTableName="Players" msprop:Generator_RowEvArgName="PlayersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="player_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnplayer_id" msprop:Generator_ColumnPropNameInRow="player_id" msprop:Generator_ColumnPropNameInTable="player_idColumn" msprop:Generator_UserColumnName="player_id" type="xs:int" />
@@ -279,8 +279,8 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="fk_clubs_nation_id" msdata:parent="Nations" msdata:child="Clubs" msdata:parentkey="nation_id" msdata:childkey="nation_id" msprop:Generator_UserChildTable="Clubs" msprop:Generator_ChildPropName="GetClubsRows" msprop:Generator_UserRelationName="fk_clubs_nation_id" msprop:Generator_RelationVarName="relationfk_clubs_nation_id" msprop:Generator_UserParentTable="Nations" msprop:Generator_ParentPropName="NationsRow" />
-      <msdata:Relationship name="fk_players_nation_id" msdata:parent="Nations" msdata:child="Players" msdata:parentkey="nation_id" msdata:childkey="nation_id" msprop:Generator_UserChildTable="Players" msprop:Generator_ChildPropName="GetPlayersRows" msprop:Generator_UserRelationName="fk_players_nation_id" msprop:Generator_ParentPropName="NationsRow" msprop:Generator_RelationVarName="relationfk_players_nation_id" msprop:Generator_UserParentTable="Nations" />
+      <msdata:Relationship name="fk_clubs_nation_id" msdata:parent="Nations" msdata:child="Clubs" msdata:parentkey="nation_id" msdata:childkey="nation_id" msprop:Generator_UserChildTable="Clubs" msprop:Generator_ChildPropName="GetClubsRows" msprop:Generator_UserRelationName="fk_clubs_nation_id" msprop:Generator_ParentPropName="NationsRow" msprop:Generator_RelationVarName="relationfk_clubs_nation_id" msprop:Generator_UserParentTable="Nations" />
+      <msdata:Relationship name="fk_players_nation_id" msdata:parent="Nations" msdata:child="Players" msdata:parentkey="nation_id" msdata:childkey="nation_id" msprop:Generator_UserChildTable="Players" msprop:Generator_ChildPropName="GetPlayersRows" msprop:Generator_UserRelationName="fk_players_nation_id" msprop:Generator_RelationVarName="relationfk_players_nation_id" msprop:Generator_UserParentTable="Nations" msprop:Generator_ParentPropName="NationsRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

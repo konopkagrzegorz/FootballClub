@@ -34,9 +34,9 @@
             this.CountryNameTextBox = new System.Windows.Forms.TextBox();
             this.CountryRemoveButton = new System.Windows.Forms.Button();
             this.CountryDataGridView = new System.Windows.Forms.DataGridView();
-            this.football_clubsDataSet = new FootbalClub.football_clubsDataSet();
+            this.football_clubsDataSet = new FootballClub.football_clubsDataSet();
             this.nationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nationsTableAdapter = new FootbalClub.football_clubsDataSetTableAdapters.NationsTableAdapter();
+            this.nationsTableAdapter = new FootballClub.football_clubsDataSetTableAdapters.NationsTableAdapter();
             this.dataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nationnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.CountryDataGridView)).BeginInit();
@@ -155,9 +155,9 @@
         private System.Windows.Forms.Button CountryRemoveButton;
         private System.Windows.Forms.DataGridView CountryDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn nationidDataGridViewTextBoxColumn;
-        private FootbalClub.football_clubsDataSet football_clubsDataSet;
+        private FootballClub.football_clubsDataSet football_clubsDataSet;
         private System.Windows.Forms.BindingSource nationsBindingSource;
-        private FootbalClub.football_clubsDataSetTableAdapters.NationsTableAdapter nationsTableAdapter;
+        private FootballClub.football_clubsDataSetTableAdapters.NationsTableAdapter nationsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nationnameDataGridViewTextBoxColumn;
     }

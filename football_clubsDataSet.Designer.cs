@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace FootbalClub {
+namespace FootballClub {
     
     
     /// <summary>
@@ -1728,7 +1728,7 @@ namespace FootbalClub {
         }
     }
 }
-namespace FootbalClub.football_clubsDataSetTableAdapters {
+namespace FootballClub.football_clubsDataSetTableAdapters {
     
     
     /// <summary>
@@ -1899,7 +1899,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.football_clubsConnectionString;
+            this._connection.ConnectionString = global::FootballClub.Properties.Settings.Default.football_clubsConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2274,7 +2274,7 @@ SELECT club_id, nation_id, club_name, club_creation_date, club_ceo_name FROM Clu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.football_clubsConnectionString;
+            this._connection.ConnectionString = global::FootballClub.Properties.Settings.Default.football_clubsConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2617,7 +2617,7 @@ SELECT player_id, player_name, player_surname, player_birthyear, club_id, nation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FootbalClub.Properties.Settings.Default.football_clubsConnectionString;
+            this._connection.ConnectionString = global::FootballClub.Properties.Settings.Default.football_clubsConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

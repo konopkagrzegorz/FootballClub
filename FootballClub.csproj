@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C26D859F-1B5E-46BA-BE36-3B531A3FB425}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FootbalClub</RootNamespace>
-    <AssemblyName>FootbalClub</AssemblyName>
+    <RootNamespace>FootballClub</RootNamespace>
+    <AssemblyName>FootballClub</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -97,6 +97,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Content Include="src\data.sql" />
     <None Include="football_clubsDataSet.xsc">

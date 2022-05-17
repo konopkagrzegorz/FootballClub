@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FootbalClub.Properties {
+namespace FootballClub.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
