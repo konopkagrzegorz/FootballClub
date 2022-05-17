@@ -51,42 +51,42 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>football_clubsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="src\forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="src\forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="KlubyPilarskie.cs">
+    <Compile Include="src\forms\KlubyPilarskie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KlubyPilarskie.Designer.cs">
+    <Compile Include="src\forms\KlubyPilarskie.Designer.cs">
       <DependentUpon>KlubyPilarskie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kraje.cs">
+    <Compile Include="src\forms\Kraje.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kraje.Designer.cs">
+    <Compile Include="src\forms\Kraje.Designer.cs">
       <DependentUpon>Kraje.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pilkarze.cs">
+    <Compile Include="src\forms\Pilkarze.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pilkarze.Designer.cs">
+    <Compile Include="src\forms\Pilkarze.Designer.cs">
       <DependentUpon>Pilkarze.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="src\forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KlubyPilarskie.resx">
+    <EmbeddedResource Include="src\forms\KlubyPilarskie.resx">
       <DependentUpon>KlubyPilarskie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kraje.resx">
+    <EmbeddedResource Include="src\forms\Kraje.resx">
       <DependentUpon>Kraje.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pilkarze.resx">
+    <EmbeddedResource Include="src\forms\Pilkarze.resx">
       <DependentUpon>Pilkarze.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -98,7 +98,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Content Include="data.sql" />
+    <Content Include="src\data.sql" />
     <None Include="football_clubsDataSet.xsc">
       <DependentUpon>football_clubsDataSet.xsd</DependentUpon>
     </None>
