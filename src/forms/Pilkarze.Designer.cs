@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PlayersDataGridView = new System.Windows.Forms.DataGridView();
+            this.playersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.football_clubsDataSet = new FootballClub.football_clubsDataSet();
+            this.clubsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PlayerNameTextBox = new System.Windows.Forms.TextBox();
             this.PlayerNameLabel = new System.Windows.Forms.Label();
             this.PlayerSurnameTextBox = new System.Windows.Forms.TextBox();
@@ -46,12 +50,8 @@
             this.PlayerCountryComboBox = new System.Windows.Forms.ComboBox();
             this.PlayerBirthNumericDropdown = new System.Windows.Forms.NumericUpDown();
             this.PlayerDataGridView = new System.Windows.Forms.DataGridView();
-            this.football_clubsDataSet = new FootballClub.football_clubsDataSet();
-            this.playersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.playersTableAdapter = new FootballClub.football_clubsDataSetTableAdapters.PlayersTableAdapter();
-            this.clubsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clubsTableAdapter = new FootballClub.football_clubsDataSetTableAdapters.ClubsTableAdapter();
-            this.nationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nationsTableAdapter = new FootballClub.football_clubsDataSetTableAdapters.NationsTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,23 +61,53 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.PlayersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.football_clubsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clubsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nationsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlayerBirthNumericDropdown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlayerDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.football_clubsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clubsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nationsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // PlayersDataGridView
             // 
+            this.PlayersDataGridView.AutoGenerateColumns = false;
             this.PlayersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PlayersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewImageColumn1});
+            this.PlayersDataGridView.DataSource = this.playersBindingSource;
             this.PlayersDataGridView.Location = new System.Drawing.Point(12, 12);
             this.PlayersDataGridView.MultiSelect = false;
             this.PlayersDataGridView.Name = "PlayersDataGridView";
             this.PlayersDataGridView.Size = new System.Drawing.Size(645, 425);
-            this.PlayersDataGridView.TabIndex = 0;
+            this.PlayersDataGridView.TabIndex = 24;
+            // 
+            // playersBindingSource
+            // 
+            this.playersBindingSource.DataMember = "Players";
+            this.playersBindingSource.DataSource = this.football_clubsDataSet;
+            // 
+            // football_clubsDataSet
+            // 
+            this.football_clubsDataSet.DataSetName = "football_clubsDataSet";
+            this.football_clubsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clubsBindingSource
+            // 
+            this.clubsBindingSource.DataMember = "Clubs";
+            this.clubsBindingSource.DataSource = this.football_clubsDataSet;
+            // 
+            // nationsBindingSource
+            // 
+            this.nationsBindingSource.DataMember = "Nations";
+            this.nationsBindingSource.DataSource = this.football_clubsDataSet;
             // 
             // PlayerNameTextBox
             // 
@@ -131,9 +161,9 @@
             this.PlayerClubLabel.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PlayerClubLabel.Location = new System.Drawing.Point(664, 148);
             this.PlayerClubLabel.Name = "PlayerClubLabel";
-            this.PlayerClubLabel.Size = new System.Drawing.Size(64, 25);
+            this.PlayerClubLabel.Size = new System.Drawing.Size(77, 25);
             this.PlayerClubLabel.TabIndex = 11;
-            this.PlayerClubLabel.Text = "Klub";
+            this.PlayerClubLabel.Text = "Klub:";
             // 
             // PlayerCountryLabel
             // 
@@ -201,6 +231,7 @@
             // PlayerClubComboBox
             // 
             this.PlayerClubComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clubsBindingSource, "club_name", true));
+            this.PlayerClubComboBox.DisplayMember = "nation_id";
             this.PlayerClubComboBox.FormattingEnabled = true;
             this.PlayerClubComboBox.Location = new System.Drawing.Point(860, 152);
             this.PlayerClubComboBox.Name = "PlayerClubComboBox";
@@ -242,51 +273,20 @@
             0,
             0});
             // 
-            // PlayersDataGridView
+            // PlayerDataGridView
             // 
-            this.PlayersDataGridView.AutoGenerateColumns = false;
-            this.PlayersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PlayersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewImageColumn1});
-            this.PlayersDataGridView.DataSource = this.playersBindingSource;
-            this.PlayersDataGridView.Location = new System.Drawing.Point(12, 12);
-            this.PlayersDataGridView.Name = "PlayerDataGridView";
-            this.PlayersDataGridView.Size = new System.Drawing.Size(645, 425);
-            this.PlayersDataGridView.TabIndex = 24;
-            // 
-            // football_clubsDataSet
-            // 
-            this.football_clubsDataSet.DataSetName = "football_clubsDataSet";
-            this.football_clubsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // playersBindingSource
-            // 
-            this.playersBindingSource.DataMember = "Players";
-            this.playersBindingSource.DataSource = this.football_clubsDataSet;
+            this.PlayerDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.PlayerDataGridView.Name = "PlayerDataGridView";
+            this.PlayerDataGridView.Size = new System.Drawing.Size(240, 150);
+            this.PlayerDataGridView.TabIndex = 0;
             // 
             // playersTableAdapter
             // 
             this.playersTableAdapter.ClearBeforeFill = true;
             // 
-            // clubsBindingSource
-            // 
-            this.clubsBindingSource.DataMember = "Clubs";
-            this.clubsBindingSource.DataSource = this.football_clubsDataSet;
-            // 
             // clubsTableAdapter
             // 
             this.clubsTableAdapter.ClearBeforeFill = true;
-            // 
-            // nationsBindingSource
-            // 
-            this.nationsBindingSource.DataMember = "Nations";
-            this.nationsBindingSource.DataSource = this.football_clubsDataSet;
             // 
             // nationsTableAdapter
             // 
@@ -315,7 +315,7 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "player_birthyear";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Data urodzenia";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Rok urodzenia";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
@@ -372,12 +372,13 @@
             this.Text = "Pilkarze";
             this.Load += new System.EventHandler(this.Pilkarze_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PlayersDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PlayerBirthNumericDropdown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.football_clubsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.football_clubsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clubsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayerBirthNumericDropdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayerDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -25,21 +25,6 @@ namespace FootballClub
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void nationsBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CountryUpdateButton_Click(object sender, EventArgs e)
         {
             if (CountryDataGridView.CurrentRow != null)

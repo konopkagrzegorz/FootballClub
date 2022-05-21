@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.CountryDeleteButton = new System.Windows.Forms.Button();
-            this.CountryUpdateButton = new System.Windows.Forms.Button();
+            this.ClubDeleteButton = new System.Windows.Forms.Button();
+            this.ClubUpdateButton = new System.Windows.Forms.Button();
             this.ClubCountryTextBox = new System.Windows.Forms.TextBox();
             this.nationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.football_clubsDataSet = new FootballClub.football_clubsDataSet();
@@ -56,27 +56,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.ClubsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // CountryDeleteButton
+            // ClubDeleteButton
             // 
-            this.CountryDeleteButton.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CountryDeleteButton.Location = new System.Drawing.Point(807, 383);
-            this.CountryDeleteButton.Name = "CountryDeleteButton";
-            this.CountryDeleteButton.Size = new System.Drawing.Size(125, 55);
-            this.CountryDeleteButton.TabIndex = 8;
-            this.CountryDeleteButton.Text = "Usuń";
-            this.CountryDeleteButton.UseVisualStyleBackColor = true;
-            this.CountryDeleteButton.Click += new System.EventHandler(this.CountryDeleteButton_Click);
+            this.ClubDeleteButton.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ClubDeleteButton.Location = new System.Drawing.Point(807, 383);
+            this.ClubDeleteButton.Name = "ClubDeleteButton";
+            this.ClubDeleteButton.Size = new System.Drawing.Size(125, 55);
+            this.ClubDeleteButton.TabIndex = 8;
+            this.ClubDeleteButton.Text = "Usuń";
+            this.ClubDeleteButton.UseVisualStyleBackColor = true;
+            this.ClubDeleteButton.Click += new System.EventHandler(this.ClubDeleteButton_Click);
             // 
-            // CountryUpdateButton
+            // ClubUpdateButton
             // 
-            this.CountryUpdateButton.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CountryUpdateButton.Location = new System.Drawing.Point(602, 382);
-            this.CountryUpdateButton.Name = "CountryUpdateButton";
-            this.CountryUpdateButton.Size = new System.Drawing.Size(145, 55);
-            this.CountryUpdateButton.TabIndex = 7;
-            this.CountryUpdateButton.Text = "Zaktualizuj";
-            this.CountryUpdateButton.UseVisualStyleBackColor = true;
-            this.CountryUpdateButton.Click += new System.EventHandler(this.CountryUpdateButton_Click);
+            this.ClubUpdateButton.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ClubUpdateButton.Location = new System.Drawing.Point(602, 382);
+            this.ClubUpdateButton.Name = "ClubUpdateButton";
+            this.ClubUpdateButton.Size = new System.Drawing.Size(145, 55);
+            this.ClubUpdateButton.TabIndex = 7;
+            this.ClubUpdateButton.Text = "Zaktualizuj";
+            this.ClubUpdateButton.UseVisualStyleBackColor = true;
+            this.ClubUpdateButton.Click += new System.EventHandler(this.ClubUpdateButton_Click);
             // 
             // ClubCountryTextBox
             // 
@@ -242,8 +242,8 @@
             this.Controls.Add(this.CountyClubNameLabel);
             this.Controls.Add(this.ClubCountryTextBox);
             this.Controls.Add(this.CountryLabelName);
-            this.Controls.Add(this.CountryDeleteButton);
-            this.Controls.Add(this.CountryUpdateButton);
+            this.Controls.Add(this.ClubDeleteButton);
+            this.Controls.Add(this.ClubUpdateButton);
             this.Controls.Add(this.ClubsDataGridView);
             this.Name = "KlubyPilarskie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -259,8 +259,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button CountryDeleteButton;
-        private System.Windows.Forms.Button CountryUpdateButton;
+        private System.Windows.Forms.Button ClubDeleteButton;
+        private System.Windows.Forms.Button ClubUpdateButton;
         private System.Windows.Forms.TextBox ClubCountryTextBox;
         private System.Windows.Forms.Label CountryLabelName;
         private System.Windows.Forms.TextBox ClubNameTextBox;

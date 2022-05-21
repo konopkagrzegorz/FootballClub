@@ -26,7 +26,7 @@ namespace FootballClub
 
         }
 
-        private void CountryDeleteButton_Click(object sender, EventArgs e)
+        private void ClubDeleteButton_Click(object sender, EventArgs e)
         {
             if (ClubsDataGridView.CurrentRow != null)
             {
@@ -36,7 +36,7 @@ namespace FootballClub
             }
         }
 
-        private void CountryUpdateButton_Click(object sender, EventArgs e)
+        private void ClubUpdateButton_Click(object sender, EventArgs e)
         {
             if (ClubsDataGridView.CurrentRow != null)
             {
